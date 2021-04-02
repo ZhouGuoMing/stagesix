@@ -1,0 +1,33 @@
+search:
+- locator: com.tencent.wework:id/gy9
+  by: id
+  action: send_keys
+  key: 测试
+- locator: //android.widget.FrameLayout/android.widget.ListView/android.widget.RelativeLayout
+  by: xpath
+  action: finds
+  finds_to_do: return
+
+search_to_delete:
+- locator: com.tencent.wework:id/ebs
+  by: id
+  action: find_click
+- locator: com.tencent.wework:id/iga
+  by: id
+  action: find_click
+- locator: com.tencent.wework:id/bct
+  by: id
+  action: find_click
+- locator: com.tencent.wework:id/esd
+  by: id
+  action: find_click
+- locator: com.tencent.wework:id/bpc
+  by: id
+  action: find_click
+- action: sleep
+  time: 3
+
+- locator: //android.widget.FrameLayout/android.widget.ListView/android.widget.RelativeLayout
+  by: xpath
+  action: finds
+  finds_to_do: return

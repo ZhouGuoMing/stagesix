@@ -1,0 +1,36 @@
+goto_add_members:
+- text: 添加成员
+  action: swip_click
+- locator: //*[@text="手动输入添加"]
+  by: xpath
+  action: find_click
+- locator: //android.widget.TextView[@text="姓名　"]/following-sibling::android.widget.EditText
+  by: xpath
+  action: send_keys
+  key: 测试314
+- locator: //android.widget.TextView[@text="手机　"]/../android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.EditText
+  by: xpath
+  action: send_keys
+  key: 13509241754
+- locator: //*[@text="保存"]
+  by: xpath
+  action: find_click
+- locator: //android.widget.Toast
+  by: xpath
+  action: find
+  find_todo: text
+
+back_to_message:
+- locator: com.tencent.wework:id/ig0
+  by: id
+  action: find_click
+- locator: //*[@text="消息"]
+  by: xpath
+  action: find_click
+
+goto_search:
+- locator: com.tencent.wework:id/igk
+  by: id
+  action: find_click
+
+

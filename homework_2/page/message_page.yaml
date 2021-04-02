@@ -1,0 +1,7 @@
+goto_addressbook:
+- locator: //*[@text="通讯录"]
+  by: xpath
+  action: find_click
+
+
+

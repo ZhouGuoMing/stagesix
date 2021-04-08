@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author  : Ming
 # @File    : addressbook_page.py
-from appium.webdriver.common.mobileby import MobileBy
-from page.base_page import BasePage
+from homework_1.page.base_page import BasePage
 
 
 
@@ -11,7 +10,7 @@ class AddressbookPage(BasePage):
 
 
     def goto_add_members(self):
-        str1= self.parse_action("../page/addressbook.yaml","goto_add_members")
+        str1= self.parse_action("D:/PycharmProjects/pythonProject/stagesix/homework_1/page/addressbook_page.yaml", "goto_add_members")
         # self.swip_click("添加成员")
         # self.find_click(MobileBy.XPATH, '//*[@text="手动输入添加"]')
         # self.find(MobileBy.XPATH,'//android.widget.TextView[@text="姓名　"]'
@@ -24,7 +23,7 @@ class AddressbookPage(BasePage):
         return self.driver, str1
 
     def back_to_message(self):
-        self.parse_action("../page/addressbook_page.yaml", "back_to_message")
+        self.parse_action("D:/PycharmProjects/pythonProject/stagesix/homework_1/page/addressbook_page.yaml", "back_to_message")
         # self.find_click(MobileBy.ID, "com.tencent.wework:id/ig0")
 
 

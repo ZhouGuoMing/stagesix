@@ -2,7 +2,7 @@
 # @Author  : Ming
 # @File    : app.py
 from appium import webdriver
-from page.message_page import MessagePage
+from homework_1.page.message_page import MessagePage
 
 
 class App:

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Author  : Ming
 # @File    : tesrdemo.py
-from page.app import App
+from homework_1.page.app import App
 
 
 

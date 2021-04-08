@@ -1,7 +1,22 @@
 goto_addressbook:
+#- locator: //*[@text="待办"]
+#  by: xpath
+#  action: find_click
+- locator: //*[@text="日程"]
+  by: xpath
+  action: find_click
 - locator: //*[@text="通讯录"]
   by: xpath
   action: find_click
+goto_schedule:
+- locator: //*[@text="日程"]
+  by: xpath
+  action: find_click
+goto_daiban:
+- locator: //*[@text="待办"]
+  by: xpath
+  action: find_click
+
 
 
 

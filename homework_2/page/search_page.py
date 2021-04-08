@@ -6,7 +6,8 @@ from appium.webdriver.common.mobileby import MobileBy
 from homework_2.page.base_page import BasePage
 class Search_Page(BasePage):
 
-    def search(self):
+    def search(self,text):
+        self._params['text']=text
         a=self.parse_action("D:/PycharmProjects/pythonProject/stagesix/homework_2/page/search_page.yaml", "search")
         return self.driver, a
 

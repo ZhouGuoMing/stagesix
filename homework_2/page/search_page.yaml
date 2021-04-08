@@ -2,7 +2,7 @@ search:
 - locator: com.tencent.wework:id/gy9
   by: id
   action: send_keys
-  key: 测试
+  text: ${text}
 - locator: //android.widget.FrameLayout/android.widget.ListView/android.widget.RelativeLayout
   by: xpath
   action: finds
@@ -26,7 +26,6 @@ search_to_delete:
   action: find_click
 - action: sleep
   time: 3
-
 - locator: //android.widget.FrameLayout/android.widget.ListView/android.widget.RelativeLayout
   by: xpath
   action: finds
